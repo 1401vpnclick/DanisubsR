@@ -1,1 +1,897 @@
-.
+[
+  {
+    "log": {
+      "access": "",
+      "error": "",
+      "loglevel": "warning"
+    },
+    "policy": {
+      "system": {
+        "statsOutboundDownlink": true,
+        "statsOutboundUplink": true
+      },
+      "levels": {
+        "8": {
+          "connIdle": 300,
+          "downlinkOnly": 1,
+          "handshake": 4,
+          "uplinkOnly": 1
+        }
+      }
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "port": 10808,
+        "listen": "0.0.0.0",
+        "protocol": "socks",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      },
+      {
+        "tag": "http",
+        "port": 10809,
+        "listen": "0.0.0.0",
+        "protocol": "http",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "settings": {
+          "vnext": [
+            {
+              "address": "fcrhgrt.hjrty54.rehlodcsdf.filimino.ir",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "db6f78c7-5aa7-41dc-9de5-34089b3bb6fa",
+                  "encryption": "mlkem768x25519plus.native.0rtt.a1kcv7fJCfkkIiK-0_rRFtx0rz7urTW2t4i_H_r6f2A"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.zoom.us",
+            "fingerprint": "chrome",
+            "publicKey": "-avLGD3Odix3zOikAeaj_5_-L__vHBytGlzkwV7xOHE",
+            "shortId": "73bf16652dbcf492"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "http",
+              "request": {
+                "version": "1.1",
+                "method": "GET",
+                "path": [
+                  "/"
+                ],
+                "headers": {
+                  "Host": [
+                    "fcrhgrt.hjrty54.rehlodcsdf.filimino.ir"
+                  ],
+                  "User-Agent": [],
+                  "Accept-Encoding": [
+                    "gzip, deflate"
+                  ],
+                  "Connection": [
+                    "keep-alive"
+                  ],
+                  "Pragma": "no-cache"
+                }
+              },
+              "response": {
+                "version": "1.1",
+                "status": "200",
+                "reason": "OK",
+                "headers": {
+                  "Content-Type": [
+                    "application/octet-stream",
+                    "video/mpeg"
+                  ],
+                  "Transfer-Encoding": [
+                    "chunked"
+                  ],
+                  "Connection": [
+                    "keep-alive"
+                  ],
+                  "Pragma": "no-cache"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "DIRECT"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "BLOCK"
+      }
+    ],
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ]
+    },
+    "routing": {
+      "domainStrategy": "AsIs",
+      "rules": []
+    },
+    "remarks": "🇩🇪 🌹 My Sunshine"
+  },
+  {
+    "log": {
+      "access": "",
+      "error": "",
+      "loglevel": "warning"
+    },
+    "policy": {
+      "system": {
+        "statsOutboundDownlink": true,
+        "statsOutboundUplink": true
+      },
+      "levels": {
+        "8": {
+          "connIdle": 300,
+          "downlinkOnly": 1,
+          "handshake": 4,
+          "uplinkOnly": 1
+        }
+      }
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "port": 10808,
+        "listen": "0.0.0.0",
+        "protocol": "socks",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      },
+      {
+        "tag": "http",
+        "port": 10809,
+        "listen": "0.0.0.0",
+        "protocol": "http",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "settings": {
+          "vnext": [
+            {
+              "address": "login.puoya.ir",
+              "port": 9555,
+              "users": [
+                {
+                  "id": "db6f78c7-5aa7-41dc-9de5-34089b3bb6fa",
+                  "encryption": "mlkem768x25519plus.native.0rtt.NJFSndv3WkvJOqO-11yH7pQnPVTKmE8XdJ3jdEXEAjg"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "login.puoya.ir"
+          },
+          "wsSettings": {
+            "path": "/RxCcccrd?ed=2056",
+            "host": "login.puoya.ir"
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "DIRECT"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "BLOCK"
+      }
+    ],
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ]
+    },
+    "routing": {
+      "domainStrategy": "AsIs",
+      "rules": []
+    },
+    "remarks": "🇫🇮 ❤️ My Heart"
+  },
+  {
+    "log": {
+      "access": "",
+      "error": "",
+      "loglevel": "warning"
+    },
+    "policy": {
+      "system": {
+        "statsOutboundDownlink": true,
+        "statsOutboundUplink": true
+      },
+      "levels": {
+        "8": {
+          "connIdle": 300,
+          "downlinkOnly": 1,
+          "handshake": 4,
+          "uplinkOnly": 1
+        }
+      }
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "port": 10808,
+        "listen": "0.0.0.0",
+        "protocol": "socks",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      },
+      {
+        "tag": "http",
+        "port": 10809,
+        "listen": "0.0.0.0",
+        "protocol": "http",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "settings": {
+          "vnext": [
+            {
+              "address": "rghterh.kuhr2.hsthj52jsds.filimino.ir",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "db6f78c7-5aa7-41dc-9de5-34089b3bb6fa",
+                  "encryption": "mlkem768x25519plus.native.0rtt.a1kcv7fJCfkkIiK-0_rRFtx0rz7urTW2t4i_H_r6f2A"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.zoom.us",
+            "fingerprint": "chrome",
+            "publicKey": "-avLGD3Odix3zOikAeaj_5_-L__vHBytGlzkwV7xOHE",
+            "shortId": "73bf16652dbcf492"
+          },
+          "tcpSettings": {
+            "header": {
+              "type": "http",
+              "request": {
+                "version": "1.1",
+                "method": "GET",
+                "path": [
+                  "/"
+                ],
+                "headers": {
+                  "Host": [
+                    "rghterh.kuhr2.hsthj52jsds.filimino.ir"
+                  ],
+                  "User-Agent": [],
+                  "Accept-Encoding": [
+                    "gzip, deflate"
+                  ],
+                  "Connection": [
+                    "keep-alive"
+                  ],
+                  "Pragma": "no-cache"
+                }
+              },
+              "response": {
+                "version": "1.1",
+                "status": "200",
+                "reason": "OK",
+                "headers": {
+                  "Content-Type": [
+                    "application/octet-stream",
+                    "video/mpeg"
+                  ],
+                  "Transfer-Encoding": [
+                    "chunked"
+                  ],
+                  "Connection": [
+                    "keep-alive"
+                  ],
+                  "Pragma": "no-cache"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "DIRECT"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "BLOCK"
+      }
+    ],
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ]
+    },
+    "routing": {
+      "domainStrategy": "AsIs",
+      "rules": []
+    },
+    "remarks": "🇳🇱 💎 My Precious"
+  },
+  {
+    "log": {
+      "access": "",
+      "error": "",
+      "loglevel": "warning"
+    },
+    "policy": {
+      "system": {
+        "statsOutboundDownlink": true,
+        "statsOutboundUplink": true
+      },
+      "levels": {
+        "8": {
+          "connIdle": 300,
+          "downlinkOnly": 1,
+          "handshake": 4,
+          "uplinkOnly": 1
+        }
+      }
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "port": 10808,
+        "listen": "0.0.0.0",
+        "protocol": "socks",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      },
+      {
+        "tag": "http",
+        "port": 10809,
+        "listen": "0.0.0.0",
+        "protocol": "http",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "settings": {
+          "vnext": [
+            {
+              "address": "104.18.137.67",
+              "port": 443,
+              "users": [
+                {
+                  "id": "db6f78c7-5aa7-41dc-9de5-34089b3bb6fa",
+                  "encryption": "mlkem768x25519plus.native.0rtt.NJFSndv3WkvJOqO-11yH7pQnPVTKmE8XdJ3jdEXEAjg"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "7e2f7d54e342191c.vsida.ir"
+          },
+          "xhttpSettings": {
+            "mode": "auto",
+            "path": "/",
+            "host": "cdn.vsida.ir",
+            "extra": {
+              "xPaddingBytes": "100-1000"
+            }
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "DIRECT"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "BLOCK"
+      }
+    ],
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ]
+    },
+    "routing": {
+      "domainStrategy": "AsIs",
+      "rules": []
+    },
+    "remarks": "🇨🇭 🫂 My Breath"
+  },
+  {
+    "log": {
+      "access": "",
+      "error": "",
+      "loglevel": "warning"
+    },
+    "policy": {
+      "system": {
+        "statsOutboundDownlink": true,
+        "statsOutboundUplink": true
+      },
+      "levels": {
+        "8": {
+          "connIdle": 300,
+          "downlinkOnly": 1,
+          "handshake": 4,
+          "uplinkOnly": 1
+        }
+      }
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "port": 10808,
+        "listen": "0.0.0.0",
+        "protocol": "socks",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      },
+      {
+        "tag": "http",
+        "port": 10809,
+        "listen": "0.0.0.0",
+        "protocol": "http",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "settings": {
+          "vnext": [
+            {
+              "address": "redblack.puoya.ir",
+              "port": 9555,
+              "users": [
+                {
+                  "id": "db6f78c7-5aa7-41dc-9de5-34089b3bb6fa",
+                  "encryption": "mlkem768x25519plus.native.0rtt.NJFSndv3WkvJOqO-11yH7pQnPVTKmE8XdJ3jdEXEAjg"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "redblack.puoya.ir"
+          },
+          "wsSettings": {
+            "path": "/RxCcccrd?ed=2056",
+            "host": "redblack.puoya.ir"
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "DIRECT"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "BLOCK"
+      }
+    ],
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ]
+    },
+    "routing": {
+      "domainStrategy": "AsIs",
+      "rules": []
+    },
+    "remarks": "🇬🇧 🌙 My Moon"
+  },
+  {
+    "log": {
+      "access": "",
+      "error": "",
+      "loglevel": "warning"
+    },
+    "policy": {
+      "system": {
+        "statsOutboundDownlink": true,
+        "statsOutboundUplink": true
+      },
+      "levels": {
+        "8": {
+          "connIdle": 300,
+          "downlinkOnly": 1,
+          "handshake": 4,
+          "uplinkOnly": 1
+        }
+      }
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "port": 10808,
+        "listen": "0.0.0.0",
+        "protocol": "socks",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      },
+      {
+        "tag": "http",
+        "port": 10809,
+        "listen": "0.0.0.0",
+        "protocol": "http",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "settings": {
+          "vnext": [
+            {
+              "address": "rfghj2l.m2mnxdwaq.myatu5.filimino.ir",
+              "port": 2096,
+              "users": [
+                {
+                  "id": "db6f78c7-5aa7-41dc-9de5-34089b3bb6fa",
+                  "encryption": "mlkem768x25519plus.native.0rtt.a1kcv7fJCfkkIiK-0_rRFtx0rz7urTW2t4i_H_r6f2A"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.zoom.us",
+            "fingerprint": "chrome",
+            "publicKey": "-avLGD3Odix3zOikAeaj_5_-L__vHBytGlzkwV7xOHE",
+            "shortId": "73bf16652dbcf492"
+          },
+          "xhttpSettings": {
+            "mode": "auto",
+            "path": "/",
+            "host": "rfghj2l.m2mnxdwaq.myatu5.filimino.ir"
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "DIRECT"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "BLOCK"
+      }
+    ],
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ]
+    },
+    "routing": {
+      "domainStrategy": "AsIs",
+      "rules": []
+    },
+    "remarks": "🇫🇷 🕊️ My Peace"
+  },
+  {
+    "log": {
+      "access": "",
+      "error": "",
+      "loglevel": "warning"
+    },
+    "policy": {
+      "system": {
+        "statsOutboundDownlink": true,
+        "statsOutboundUplink": true
+      },
+      "levels": {
+        "8": {
+          "connIdle": 300,
+          "downlinkOnly": 1,
+          "handshake": 4,
+          "uplinkOnly": 1
+        }
+      }
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "port": 10808,
+        "listen": "0.0.0.0",
+        "protocol": "socks",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      },
+      {
+        "tag": "http",
+        "port": 10809,
+        "listen": "0.0.0.0",
+        "protocol": "http",
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "routeOnly": false
+        },
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "allowTransparent": false
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "settings": {
+          "vnext": [
+            {
+              "address": "104.18.137.67",
+              "port": 443,
+              "users": [
+                {
+                  "id": "db6f78c7-5aa7-41dc-9de5-34089b3bb6fa",
+                  "encryption": "mlkem768x25519plus.native.0rtt.NJFSndv3WkvJOqO-11yH7pQnPVTKmE8XdJ3jdEXEAjg"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "serverName": "b01e99f391a9645c.vsida.ir"
+          },
+          "xhttpSettings": {
+            "mode": "auto",
+            "path": "/",
+            "host": "cdn.vsida.ir",
+            "extra": {
+              "xPaddingBytes": "100-1000"
+            }
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "DIRECT"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "BLOCK"
+      }
+    ],
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
+      ]
+    },
+    "routing": {
+      "domainStrategy": "AsIs",
+      "rules": []
+    },
+    "remarks": "🍏 ✨ My Beautiful"
+  },
+  {
+    "log": {
+      "access": "",
+      "error": "",
+      "loglevel": "warning"
+    },
+    "policy": {
+      "system": {
+        "statsOutboundDownlink": true,
+        "statsOutboundUplink": true
+      },
+      "levels": {
+        "8": {
+          "connIdle": 300,
+          "downlinkOnly": 1,
+          "handshake": 4,
+          "uplinkOnly": 1
+        }
+      }
+    },
+    "inbounds": [
+      {
+     
