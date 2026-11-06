@@ -1,1 +1,1 @@
-vless://c2c8f6c1-626b-4bb7-bd6a-d9ecb18e795d@199.232.9.254:443?mode=packet-up&path=%2F&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=1&host=wizard-system-123.global.ssl.fastly.net&fp=ios&type=xhttp&allowInsecure=1&sni=cdn.akamai.steamstatic.com#%F0%9F%87%BA%F0%9F%87%B8%20USA%20%E2%98%81%EF%B8%8F%20CDN
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZZ21SX2RKSVBoUllPV0M0dnFXTWpIcERlQWUtT1dKTQ==@37.152.175.95:11139#%F0%9F%87%BA%F0%9F%87%B8USA
